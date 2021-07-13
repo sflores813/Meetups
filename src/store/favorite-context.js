@@ -14,7 +14,7 @@ const FavoritesContext = createContext ({
 
     function addFavoriteHandler (favoriteMeetup) {
         setUserFavorites(( prevUserFavorites) => {
-            return prevUserFavorites.concat(favoriteMeetup)
+            return prevUserFavorites.concat(favoriteMeetup);
         });
     }
 

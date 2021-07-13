@@ -18,7 +18,8 @@ function toggleFavoriteStatusHandler() {
       id: props.id,
       title: props.title,
       description: props.description,
-      address: props.address,
+      image: props.image,
+      address: props.address
     });
   }
  
@@ -38,7 +39,8 @@ function toggleFavoriteStatusHandler() {
         <p>{props.description}</p>
       </div>
       <div className={classes.actions}>
-        <button onClick={toggleFavoriteStatusHandler}>{itemIsFavorite ? 'Remove from Favorites' : 'To Favorites'}</button>
+        <button onClick={toggleFavoriteStatusHandler}>{itemIsFavorite ? 'Remove from Favorites' : 'To Favorites'}
+        </button>
       </div>
       </Card>
     </li>
